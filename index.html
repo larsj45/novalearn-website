@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaLearn | AI Detection for UK Schools & Universities</title>
+    <meta name="description" content="Protect academic integrity with 99.98% accurate AI detection. NovaLearn brings Pangram to UK education — GDPR compliant, LMS integrated, educator-approved.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="NovaLearn — AI Detection That Actually Works">
+    <meta property="og:description" content="Protect academic integrity with 99.98% accurate AI detection. NovaLearn brings Pangram to UK education.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://novalearn.co.uk">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nova-primary': '#0d9488',
+                        'nova-primary-dark': '#0f766e',
+                        'nova-accent': '#f97316',
+                        'nova-accent-light': '#fb923c',
+                        'nova-bg': '#fefdfb',
+                        'nova-bg-alt': '#f8f6f3',
+                        'nova-text': '#374151',
+                        'nova-text-light': '#6b7280',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #0d9488 0%, #0891b2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, #fefdfb 0%, #f0fdfa 100%);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(13, 148, 136, 0.4);
+        }
+        .btn-secondary {
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background: #0d9488;
+            color: white;
+            border-color: #0d9488;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
+        }
+        .bett-banner {
+            background: linear-gradient(135deg, #0d9488 0%, #0891b2 50%, #0d9488 100%);
+            background-size: 200% 200%;
+            animation: gradientMove 8s ease infinite;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-nova-bg text-nova-text">
+
+    <!-- Bett Banner -->
+    <div class="bett-banner text-white py-3 px-4 text-center">
+        <p class="text-sm md:text-base font-medium">
+            <span class="mr-2">📍</span>
+            <strong>Meet us at Bett London 2026</strong> — Stand SP40, Teaching & Learning Zone — Jan 21-23
+            <a href="#bett" class="ml-2 underline hover:no-underline">Learn more →</a>
+        </p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-nova-bg/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-nova-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">N</span>
+                    </div>
+                    <span class="text-xl font-bold text-nova-text">Nova<span class="text-nova-primary">Learn</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#solution" class="text-nova-text-light hover:text-nova-primary transition">Solution</a>
+                    <a href="#how-it-works" class="text-nova-text-light hover:text-nova-primary transition">How It Works</a>
+                    <a href="#why-novalearn" class="text-nova-text-light hover:text-nova-primary transition">Why Us</a>
+                    <a href="#faq" class="text-nova-text-light hover:text-nova-primary transition">FAQ</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#contact" class="hidden sm:inline-block text-nova-primary font-medium hover:text-nova-primary-dark transition">Contact</a>
+                    <a href="#demo" class="btn-primary text-white px-5 py-2.5 rounded-full font-medium">
+                        Book a Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-16 pb-24 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- Badge -->
+                <div class="inline-flex items-center bg-teal-50 text-nova-primary px-4 py-2 rounded-full text-sm font-medium mb-8">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Trusted AI Detection for UK Education
+                </div>
+
+                <!-- Headline -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-nova-text leading-tight mb-6">
+                    Protect Academic Integrity.<br>
+                    <span class="gradient-text">Support Student Success.</span>
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="text-lg md:text-xl text-nova-text-light max-w-2xl mx-auto mb-10">
+                    NovaLearn brings world-class EdTech to British schools and universities. Our flagship solution detects AI-generated content with 99.98% accuracy — so you can focus on teaching, not policing.
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#demo" class="btn-primary text-white px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center">
+                        Book a Demo
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#bett" class="btn-secondary border-2 border-nova-primary text-nova-primary px-8 py-4 rounded-full font-semibold text-lg">
+                        Meet Us at Bett — Stand SP40
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-12 px-4 border-y border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-center text-nova-text-light text-sm font-medium mb-8 uppercase tracking-wide">Powered by Technology Trusted Worldwide</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl md:text-5xl font-bold text-nova-primary mb-2">99.98%</div>
+                    <div class="text-nova-text-light">Detection Accuracy</div>
+                    <div class="text-sm text-nova-text-light mt-1">Third-party verified</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl md:text-5xl font-bold text-nova-primary mb-2">~0%</div>
+                    <div class="text-nova-text-light">False Positive Rate</div>
+                    <div class="text-sm text-nova-text-light mt-1">Protecting students & standards</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl md:text-5xl font-bold text-nova-primary mb-2">150K+</div>
+                    <div class="text-nova-text-light">Documents Analysed</div>
+                    <div class="text-sm text-nova-text-light mt-1">Trusted by educators worldwide</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 px-4 bg-nova-bg-alt">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-nova-text mb-6">AI in the Classroom: A New Challenge</h2>
+            <div class="text-lg text-nova-text-light space-y-4">
+                <p>
+                    Generative AI is transforming education — but it's also raising urgent questions about academic integrity. Teachers need to know: is this student's work authentic?
+                </p>
+                <p>
+                    Most detection tools create more problems than they solve. High false positive rates lead to wrongful accusations. Students feel surveilled rather than supported. Trust breaks down.
+                </p>
+                <p class="text-nova-primary font-semibold text-xl pt-4">
+                    There's a better way.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-nova-text mb-4">Meet Pangram: AI Detection That Actually Works</h2>
+                <p class="text-lg text-nova-text-light max-w-2xl mx-auto">
+                    NovaLearn is the exclusive UK partner for Pangram — the most accurate AI detection platform on the market. Developed by AI researchers from Stanford, Tesla, and Google.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="card-hover bg-nova-bg p-8 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-nova-text mb-3">Unmatched Accuracy</h3>
+                    <p class="text-nova-text-light">99.98% detection rate across ChatGPT, Claude, Gemini, Perplexity and more. Verified by third-party researchers at the University of Maryland.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card-hover bg-nova-bg p-8 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-nova-text mb-3">Near-Zero False Positives</h3>
+                    <p class="text-nova-text-light">We know the damage a wrongful accusation can cause. Pangram is designed to protect students as much as standards.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card-hover bg-nova-bg p-8 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-nova-text mb-3">Built Into Your Workflow</h3>
+                    <p class="text-nova-text-light">Native integrations with Canvas, Moodle, Blackboard, Schoology, and Google Classroom. Check submissions without leaving your LMS.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card-hover bg-nova-bg p-8 rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-nova-text mb-3">See the Evidence</h3>
+                    <p class="text-nova-text-light">Don't just get a score — understand why. Pangram highlights specific phrases and patterns, so you can have informed conversations with students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 px-4 bg-nova-bg-alt">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-nova-text mb-4">Simple to Use. Powerful Results.</h2>
+                <p class="text-lg text-nova-text-light">Get started in minutes, not months.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-nova-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
+                    <h3 class="text-xl font-bold text-nova-text mb-3">Connect</h3>
+                    <p class="text-nova-text-light">Link Pangram to your existing LMS in minutes. Works with Canvas, Moodle, Blackboard, and more.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-nova-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
+                    <h3 class="text-xl font-bold text-nova-text mb-3">Submit</h3>
+                    <p class="text-nova-text-light">Students submit work as normal. Pangram analyses submissions automatically in the background.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-nova-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
+                    <h3 class="text-xl font-bold text-nova-text mb-3">Review</h3>
+                    <p class="text-nova-text-light">Get clear, actionable reports. See AI probability scores and highlighted passages — no guesswork required.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#demo" class="btn-primary text-white px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center">
+                    See It In Action
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why NovaLearn -->
+    <section id="why-novalearn" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-nova-text mb-6">Your UK Partner for World-Class EdTech</h2>
+                    <p class="text-lg text-nova-text-light mb-8">
+                        NovaLearn is part of Global Edtech Ventures — a portfolio of education technology solutions built for European institutions. We don't just resell software. We provide:
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-5 h-5 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-nova-text mb-1">Local Support</h4>
+                                <p class="text-nova-text-light">UK-based team, UK business hours, no transatlantic delays.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-5 h-5 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-nova-text mb-1">GDPR Compliance</h4>
+                                <p class="text-nova-text-light">European data residency and privacy standards built in.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-5 h-5 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-nova-text mb-1">Education Expertise</h4>
+                                <p class="text-nova-text-light">We understand schools, MATs, and universities because that's all we do.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-5 h-5 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-nova-text mb-1">Curated Solutions</h4>
+                                <p class="text-nova-text-light">We only partner with best-in-class technology that solves real problems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-3xl p-8 lg:p-12">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-nova-text mb-4">Part of a Complete Solution</h3>
+                        <p class="text-nova-text-light mb-6">
+                            NovaLearn is part of the <strong>Academic Integrity Stack</strong> — combining AI detection, secure LMS hosting, and human-audited proctoring for complete protection.
+                        </p>
+                        <a href="#contact" class="text-nova-primary font-semibold hover:underline">Learn about our full portfolio →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bett Section -->
+    <section id="bett" class="py-20 px-4 bg-gradient-to-br from-teal-600 to-cyan-700 text-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">See Pangram Live at Bett London</h2>
+                    <p class="text-lg text-teal-100 mb-8">
+                        We'll be at Bett UK 2026, demonstrating how AI detection can work <em>with</em> educators, not against them. Come see it in action and meet our team.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-teal-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Live Pangram demos</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-teal-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>LMS integration walkthroughs</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-teal-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Our complete Academic Integrity Stack</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="inline-flex items-center bg-white text-teal-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-teal-50 transition">
+                        Book a Meeting at Bett
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 text-center">
+                    <div class="text-6xl mb-4">📍</div>
+                    <h3 class="text-2xl font-bold mb-6">Find Us</h3>
+                    <div class="space-y-4 text-lg">
+                        <div class="bg-white/10 rounded-xl p-4">
+                            <div class="text-teal-200 text-sm uppercase tracking-wide mb-1">Stand</div>
+                            <div class="text-2xl font-bold">SP40</div>
+                        </div>
+                        <div class="bg-white/10 rounded-xl p-4">
+                            <div class="text-teal-200 text-sm uppercase tracking-wide mb-1">Location</div>
+                            <div class="font-semibold">Global Edtech Pavilion</div>
+                            <div class="text-teal-100">Teaching & Learning Zone</div>
+                        </div>
+                        <div class="bg-white/10 rounded-xl p-4">
+                            <div class="text-teal-200 text-sm uppercase tracking-wide mb-1">Dates</div>
+                            <div class="font-semibold">January 21-23, 2026</div>
+                            <div class="text-teal-100">ExCeL London</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-4 bg-nova-bg">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-nova-text mb-4">Questions? We've Got Answers.</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <details class="bg-white rounded-xl border border-gray-100 overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex justify-between items-center font-semibold text-nova-text hover:bg-gray-50 transition">
+                        How accurate is Pangram really?
+                        <svg class="w-5 h-5 text-nova-text-light group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-nova-text-light">
+                        99.98% detection accuracy, independently verified by the University of Maryland. More importantly, the false positive rate is near zero — we don't wrongly accuse students.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="bg-white rounded-xl border border-gray-100 overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex justify-between items-center font-semibold text-nova-text hover:bg-gray-50 transition">
+                        Which AI tools can it detect?
+                        <svg class="w-5 h-5 text-nova-text-light group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-nova-text-light">
+                        Pangram detects content from ChatGPT (all versions), Claude, Gemini, Perplexity, and other major LLMs. The detection model is continuously updated as new AI tools emerge.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="bg-white rounded-xl border border-gray-100 overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex justify-between items-center font-semibold text-nova-text hover:bg-gray-50 transition">
+                        Does it integrate with our LMS?
+                        <svg class="w-5 h-5 text-nova-text-light group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-nova-text-light">
+                        Yes. Pangram has native integrations with Canvas, Moodle, Blackboard, Schoology, and Google Classroom. Setup takes minutes, not days.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 4 -->
+                <details class="bg-white rounded-xl border border-gray-100 overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex justify-between items-center font-semibold text-nova-text hover:bg-gray-50 transition">
+                        Is it GDPR compliant?
+                        <svg class="w-5 h-5 text-nova-text-light group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-nova-text-light">
+                        Absolutely. NovaLearn is a UK/European company, and we ensure all data is processed in compliance with GDPR and UK data protection regulations.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 5 -->
+                <details class="bg-white rounded-xl border border-gray-100 overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex justify-between items-center font-semibold text-nova-text hover:bg-gray-50 transition">
+                        How is this different from Turnitin?
+                        <svg class="w-5 h-5 text-nova-text-light group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-nova-text-light">
+                        Turnitin is a great plagiarism tool, but its AI detection has faced accuracy criticism. Pangram was built AI-first with a singular focus on accuracy and minimising false positives.
+                    </div>
+                </details>
+
+                <!-- FAQ Item 6 -->
+                <details class="bg-white rounded-xl border border-gray-100 overflow-hidden group">
+                    <summary class="p-6 cursor-pointer flex justify-between items-center font-semibold text-nova-text hover:bg-gray-50 transition">
+                        What does it cost?
+                        <svg class="w-5 h-5 text-nova-text-light group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-nova-text-light">
+                        Pricing depends on your institution size and needs. We offer flexible packages for individual schools, MATs, and universities. <a href="#contact" class="text-nova-primary hover:underline">Contact us</a> for a quote.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Demo Section -->
+    <section id="demo" class="py-20 px-4 bg-nova-bg-alt">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-nova-text mb-4">Ready to Protect Integrity Without Sacrificing Trust?</h2>
+                <p class="text-lg text-nova-text-light">Join hundreds of institutions worldwide using Pangram to navigate the AI era with confidence.</p>
+            </div>
+
+            <div id="contact" class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-nova-text mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-nova-primary focus:border-transparent transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-nova-text mb-2">Work Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-nova-primary focus:border-transparent transition">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="institution" class="block text-sm font-medium text-nova-text mb-2">Institution</label>
+                            <input type="text" id="institution" name="institution" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-nova-primary focus:border-transparent transition">
+                        </div>
+                        <div>
+                            <label for="role" class="block text-sm font-medium text-nova-text mb-2">Your Role</label>
+                            <select id="role" name="role" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-nova-primary focus:border-transparent transition">
+                                <option value="">Select your role</option>
+                                <option value="teacher">Teacher / Lecturer</option>
+                                <option value="head">Head of Department</option>
+                                <option value="it">IT / Technology Lead</option>
+                                <option value="admin">Administrator / Leadership</option>
+                                <option value="procurement">Procurement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="lms" class="block text-sm font-medium text-nova-text mb-2">Which LMS do you use?</label>
+                        <select id="lms" name="lms" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-nova-primary focus:border-transparent transition">
+                            <option value="">Select your LMS</option>
+                            <option value="canvas">Canvas</option>
+                            <option value="moodle">Moodle</option>
+                            <option value="blackboard">Blackboard</option>
+                            <option value="schoology">Schoology</option>
+                            <option value="google">Google Classroom</option>
+                            <option value="other">Other</option>
+                            <option value="none">None / Not sure</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="interest" class="block text-sm font-medium text-nova-text mb-2">What are you interested in?</label>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="interest[]" value="demo" class="w-4 h-4 text-nova-primary border-gray-300 rounded focus:ring-nova-primary">
+                                <span class="ml-3 text-nova-text-light">Book a demo</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="interest[]" value="bett" class="w-4 h-4 text-nova-primary border-gray-300 rounded focus:ring-nova-primary">
+                                <span class="ml-3 text-nova-text-light">Meet at Bett London (Jan 21-23)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="interest[]" value="pricing" class="w-4 h-4 text-nova-primary border-gray-300 rounded focus:ring-nova-primary">
+                                <span class="ml-3 text-nova-text-light">Get pricing information</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="interest[]" value="info" class="w-4 h-4 text-nova-primary border-gray-300 rounded focus:ring-nova-primary">
+                                <span class="ml-3 text-nova-text-light">Just want more information</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-nova-text mb-2">Anything else you'd like us to know? (Optional)</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-nova-primary focus:border-transparent transition"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn-primary w-full text-white px-8 py-4 rounded-xl font-semibold text-lg">
+                            Submit Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-nova-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">N</span>
+                        </div>
+                        <span class="text-xl font-bold">Nova<span class="text-nova-primary">Learn</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        World-class EdTech for British education. Part of Global Edtech Ventures.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Solutions</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#solution" class="hover:text-white transition">AI Detection</a></li>
+                        <li><a href="#how-it-works" class="hover:text-white transition">How It Works</a></li>
+                        <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#why-novalearn" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#bett" class="hover:text-white transition">Bett 2026</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 NovaLearn. All rights reserved.
+                </p>
+                <p class="text-gray-500 text-sm mt-4 md:mt-0">
+                    A <a href="https://globaledtech.ventures" class="text-gray-400 hover:text-white transition">Global Edtech Ventures</a> company.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
