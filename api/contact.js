@@ -62,7 +62,7 @@ export default async function handler(req, res) {
     // Send email via Resend
     const { data, error } = await resend.emails.send({
       from: 'NovaLearn <contact@novalearn.co.uk>',
-      to: ['lars@novalearn.co.uk'],
+      to: ['lars@globaledtech.ventures'],
       replyTo: email,
       subject: `New NovaLearn Inquiry from ${name} - ${institution}`,
       html: `
