@@ -19,14 +19,14 @@
             theme: {
                 extend: {
                     colors: {
-                        'nova-primary': '#0d9488',
-                        'nova-primary-dark': '#0f766e',
-                        'nova-accent': '#f97316',
-                        'nova-accent-light': '#fb923c',
+                        'nova-primary': '#9b3d2b',
+                        'nova-primary-dark': '#7a3022',
+                        'nova-accent': '#3d4f5f',
+                        'nova-accent-light': '#5a6d7a',
                         'nova-bg': '#fefdfb',
                         'nova-bg-alt': '#f8f6f3',
-                        'nova-text': '#374151',
-                        'nova-text-light': '#6b7280',
+                        'nova-text': '#3d4f5f',
+                        'nova-text-light': '#5a6d7a',
                     }
                 }
             }
@@ -43,29 +43,29 @@
             font-family: 'DM Sans', sans-serif;
         }
         .gradient-text {
-            background: linear-gradient(135deg, #0d9488 0%, #0891b2 100%);
+            background: linear-gradient(135deg, #9b3d2b 0%, #c45a3a 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
         .hero-gradient {
-            background: linear-gradient(180deg, #fefdfb 0%, #f0fdfa 100%);
+            background: linear-gradient(180deg, #fefdfb 0%, #fdf5f3 100%);
         }
         .btn-primary {
-            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+            background: linear-gradient(135deg, #9b3d2b 0%, #7a3022 100%);
             transition: all 0.3s ease;
         }
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px -5px rgba(13, 148, 136, 0.4);
+            box-shadow: 0 10px 25px -5px rgba(155, 61, 43, 0.4);
         }
         .btn-secondary {
             transition: all 0.3s ease;
         }
         .btn-secondary:hover {
-            background: #0d9488;
+            background: #9b3d2b;
             color: white;
-            border-color: #0d9488;
+            border-color: #9b3d2b;
         }
         .card-hover {
             transition: all 0.3s ease;
@@ -75,7 +75,7 @@
             box-shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
         }
         .bett-banner {
-            background: linear-gradient(135deg, #0d9488 0%, #0891b2 50%, #0d9488 100%);
+            background: linear-gradient(135deg, #9b3d2b 0%, #3d4f5f 50%, #9b3d2b 100%);
             background-size: 200% 200%;
             animation: gradientMove 8s ease infinite;
         }
@@ -93,16 +93,16 @@
         <p class="text-sm md:text-base font-medium">
             <span class="mr-2">📍</span>
             <strong>Meet us at Bett London 2026</strong> — Stand SP40, Teaching & Learning Zone — Jan 21-23
-            <a href="#bett" class="ml-2 underline hover:no-underline">Learn more →</a>
+            <a href="#contact" class="ml-2 underline hover:no-underline">Get in touch →</a>
         </p>
     </div>
 
     <!-- Navigation -->
     <nav class="bg-nova-bg/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center h-20 py-2">
                 <div class="flex items-center">
-                    <img src="Logo Files/svg/Color logo - no background.svg" alt="NovaLearn" class="h-10">
+                    <img src="novalearn-logo.svg" alt="NovaLearn" class="h-14">
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#solution" class="text-nova-text-light hover:text-nova-primary transition">Solution</a>
@@ -125,7 +125,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center max-w-4xl mx-auto">
                 <!-- Badge -->
-                <div class="inline-flex items-center bg-teal-50 text-nova-primary px-4 py-2 rounded-full text-sm font-medium mb-8">
+                <div class="inline-flex items-center bg-red-50 text-nova-primary px-4 py-2 rounded-full text-sm font-medium mb-8">
                     <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                     </svg>
@@ -151,8 +151,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
                     </a>
-                    <a href="#bett" class="btn-secondary border-2 border-nova-primary text-nova-primary px-8 py-4 rounded-full font-semibold text-lg">
-                        Meet Us at Bett — Stand SP40
+                    <a href="#contact" class="btn-secondary border-2 border-nova-primary text-nova-primary px-8 py-4 rounded-full font-semibold text-lg">
+                        Get In Touch
                     </a>
                 </div>
             </div>
@@ -214,7 +214,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Card 1 -->
                 <div class="card-hover bg-nova-bg p-8 rounded-2xl border border-gray-100">
-                    <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
@@ -225,7 +225,7 @@
 
                 <!-- Card 2 -->
                 <div class="card-hover bg-nova-bg p-8 rounded-2xl border border-gray-100">
-                    <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
@@ -236,7 +236,7 @@
 
                 <!-- Card 3 -->
                 <div class="card-hover bg-nova-bg p-8 rounded-2xl border border-gray-100">
-                    <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
                         </svg>
@@ -247,7 +247,7 @@
 
                 <!-- Card 4 -->
                 <div class="card-hover bg-nova-bg p-8 rounded-2xl border border-gray-100">
-                    <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
@@ -315,7 +315,7 @@
 
                     <div class="space-y-6">
                         <div class="flex items-start">
-                            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                                 <svg class="w-5 h-5 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -328,7 +328,7 @@
                         </div>
 
                         <div class="flex items-start">
-                            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                                 <svg class="w-5 h-5 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                                 </svg>
@@ -340,7 +340,7 @@
                         </div>
 
                         <div class="flex items-start">
-                            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                                 <svg class="w-5 h-5 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
                                 </svg>
@@ -352,7 +352,7 @@
                         </div>
 
                         <div class="flex items-start">
-                            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                                 <svg class="w-5 h-5 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                                 </svg>
@@ -365,7 +365,7 @@
                     </div>
                 </div>
 
-                <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-3xl p-8 lg:p-12">
+                <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-8 lg:p-12">
                     <div class="text-center">
                         <div class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-6">
                             <svg class="w-10 h-10 text-nova-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -384,38 +384,38 @@
     </section>
 
     <!-- Bett Section -->
-    <section id="bett" class="py-20 px-4 bg-gradient-to-br from-teal-600 to-cyan-700 text-white">
+    <section id="bett" class="py-20 px-4 bg-gradient-to-br from-nova-primary to-nova-accent text-white">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">See Pangram Live at Bett London</h2>
-                    <p class="text-lg text-teal-100 mb-8">
-                        We'll be at Bett UK 2026, demonstrating how AI detection can work <em>with</em> educators, not against them. Come see it in action and meet our team.
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Meet Us at Bett London 2026</h2>
+                    <p class="text-lg text-red-100 mb-8">
+                        We'll be at Bett UK 2026 to discuss how AI detection can work <em>with</em> educators, not against them. Come meet our team and learn more about our solutions.
                     </p>
 
                     <div class="space-y-4 mb-8">
                         <div class="flex items-center">
-                            <svg class="w-6 h-6 mr-3 text-teal-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 mr-3 text-red-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
-                            <span>Live Pangram demos</span>
+                            <span>Learn about Pangram AI detection</span>
                         </div>
                         <div class="flex items-center">
-                            <svg class="w-6 h-6 mr-3 text-teal-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 mr-3 text-red-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
-                            <span>LMS integration walkthroughs</span>
+                            <span>Discuss LMS integration options</span>
                         </div>
                         <div class="flex items-center">
-                            <svg class="w-6 h-6 mr-3 text-teal-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 mr-3 text-red-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
-                            <span>Our complete Academic Integrity Stack</span>
+                            <span>Explore our Academic Integrity Stack</span>
                         </div>
                     </div>
 
-                    <a href="#contact" class="inline-flex items-center bg-white text-teal-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-teal-50 transition">
-                        Book a Meeting at Bett
+                    <a href="#contact" class="inline-flex items-center bg-white text-nova-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                        Schedule a Meeting
                         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
@@ -427,18 +427,18 @@
                     <h3 class="text-2xl font-bold mb-6">Find Us</h3>
                     <div class="space-y-4 text-lg">
                         <div class="bg-white/10 rounded-xl p-4">
-                            <div class="text-teal-200 text-sm uppercase tracking-wide mb-1">Stand</div>
+                            <div class="text-red-200 text-sm uppercase tracking-wide mb-1">Stand</div>
                             <div class="text-2xl font-bold">SP40</div>
                         </div>
                         <div class="bg-white/10 rounded-xl p-4">
-                            <div class="text-teal-200 text-sm uppercase tracking-wide mb-1">Location</div>
+                            <div class="text-red-200 text-sm uppercase tracking-wide mb-1">Location</div>
                             <div class="font-semibold">Global Edtech Pavilion</div>
-                            <div class="text-teal-100">Teaching & Learning Zone</div>
+                            <div class="text-red-100">Teaching & Learning Zone</div>
                         </div>
                         <div class="bg-white/10 rounded-xl p-4">
-                            <div class="text-teal-200 text-sm uppercase tracking-wide mb-1">Dates</div>
+                            <div class="text-red-200 text-sm uppercase tracking-wide mb-1">Dates</div>
                             <div class="font-semibold">January 21-23, 2026</div>
-                            <div class="text-teal-100">ExCeL London</div>
+                            <div class="text-red-100">ExCeL London</div>
                         </div>
                     </div>
                 </div>
@@ -598,7 +598,7 @@
                             </label>
                             <label class="flex items-center">
                                 <input type="checkbox" name="interest[]" value="bett" class="w-4 h-4 text-nova-primary border-gray-300 rounded focus:ring-nova-primary">
-                                <span class="ml-3 text-nova-text-light">Meet at Bett London (Jan 21-23)</span>
+                                <span class="ml-3 text-nova-text-light">Schedule a meeting at Bett London (Jan 21-23)</span>
                             </label>
                             <label class="flex items-center">
                                 <input type="checkbox" name="interest[]" value="pricing" class="w-4 h-4 text-nova-primary border-gray-300 rounded focus:ring-nova-primary">
@@ -632,7 +632,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                 <div>
                     <div class="flex items-center mb-4">
-                        <img src="Logo Files/svg/White logo - no background.svg" alt="NovaLearn" class="h-12">
+                        <img src="novalearn-logo.svg" alt="NovaLearn" class="h-12 brightness-0 invert">
                     </div>
                     <p class="text-gray-400 text-sm">
                         World-class EdTech for British education. Part of Global Edtech Ventures.
